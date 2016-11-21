@@ -1,5 +1,10 @@
-var card1 = "queen";
-var card2 = "queen";
-var card3 = "king";
-var card3 = "king";
-console.log("Card equality evaluates to: " + (card1 == card2) + ".");
+var board = document.getElementById('gameBoard');
+var i;
+var createCards = function (num) {
+    for (i = 0; i < 4; i++) {
+        var card = document.createElement('div');
+        card.className = 'card';
+        board.appendChild(card);
+    }
+}
+createCards();
