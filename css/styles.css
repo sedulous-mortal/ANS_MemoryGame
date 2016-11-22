@@ -1,68 +1,103 @@
 body {
-    color: white;
-    background-color: #212121;
     text-align: center;
-}
-
-h1 {
-    color: #8855DD;
-    font-size: 36px;
-}
-
-h2 {
-    color: gold;
-}
-
-p {
-    padding: 2% 10%;
-    padding-top: 10px;
-    font-size: 20px;
-}
-
-a {
-    color: gold;
-}
-
-.board {
-    margin-bottom: 2%;
-    padding-top: 2%;
-    display: inline-block;
-    height: 60%;
-    width: 50%;
-    background-color: #424242;
-    border-radius: 10px;
+    background-color: black;
+    color: floralwhite;
 }
 
 .card {
-    display: inline-flex;
-    height: 25%;
-    margin: 10px;
+    height: 200px;
     width: 150px;
-    border: black solid 1px;
+    border: 3px solid teal;
+    background-color: teal;
     border-radius: 10px;
-    background-color: #E3E3E3;
-    background-image: url("../imgs/bird-icon.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    float: left;
+    margin: 8%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
-.instructions,
-.top {
-    background-color: rgba(0, 0, 0, .5);
+.instructions {
+    margin: 0 5% 5% 5%;
+    padding: 2%;
 }
 
-footer {
-    padding: 1em;
-    background-color: rgba(0, 0, 0, .5);
+h1 {
+    color: rgb(2, 132, 130);
+    text-align: center
+}
+
+h2 {
+    color: #ffd700;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.board {
+    height: 80%;
+    width: 50%;
+    display: inline-block;
+    background-color: rgba(33, 33, 33, .6);
+    margin-bottom: 10%;
+}
+
+nav {
+    background-color: rgba(55, 33, 55, .5);
+}
+
+nav a {
+    background-color: #ffbf00;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 2%;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: #ee5f3c;
+}
+
+.dev a:hover {
+    color: deeppink;
+    background-color: rgba(33, 33, 33, 0);
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+.dev {
+    background-color: rgba(33, 33, 33, .5);
+    padding: 5px 5px;
     color: white;
 }
 
-#span {
-    color: teal;
+.dev a {
+    color: gold;
+}
+
+footer {
+    font-size: 18px;
+    color: black;
+    background-color: gold;
+    text-align: center;
+    padding: 10px;
 }
 
 
-/*media @(max-width=1065) {
-     stop pushing the cards all over the place in a column
-}*/
+/* added to keep the card images a decent size */
+
+img {
+    height: 200px;
+    width: 150px;
+}
